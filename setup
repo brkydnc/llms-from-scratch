@@ -1,0 +1,12 @@
+#!/bin/sh
+
+# First of all, install `jupyter` system-wide,
+pip install jupyter
+# Then, create a virtual environment in this repository,
+python -m venv venv
+# And activate it,
+source ./venv/bin/activate
+# Then, install dependencies
+pip install -r requirements.txt
+#Finally, setup virtual environment for jupyter notebooks,
+python -m ipykernel install --user --name=llms-from-scratch-venv
