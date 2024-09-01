@@ -1,14 +1,12 @@
 # Setup
-Please run the following command in your terminal.
 ```sh
-./setup
+# Clone the repository
+git clone https://github.com/brkydnc/llms-from-scratch && cd llms-from-scratch
+# Install poetry
+python -m pip install poetry
+# Install dependencies
+poetry install
+# Run jupyter notebook
+poetry run jupyter notebook
 ```
-# After the setup
-Just run the following command, and select a notebook to edit,
-```
-jupyter notebook
-```
-After that, go to `Kernel > Change Kernel...` in the notebook toolbar, and
-select `llms-from-scratch-venv`.
-
 Happy hacking!
